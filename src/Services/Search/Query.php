@@ -23,4 +23,7 @@ final class Query implements Search
     public function get(string $resourceClass,  array $args = [], array $context = []) {
         
     }
+    private function validate(array $args = [], array $context = []) {
+        
+    }
 }

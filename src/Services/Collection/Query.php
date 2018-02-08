@@ -19,8 +19,29 @@ final class Query implements Collection
         $this->guard = $guard;
         $this->validator = $validator;
     }
-    
     public function get(string $resourceClass,  array $args = [], array $context = []) {
+
         
+        
+    }
+    private function validate(array $args = [], array $context = []) {
+        
+    }
+    private function args(array $configs = []) {
+        return [
+            'select' => 'object',
+            'filter' => 'object',
+            'page' => 'integer',
+            'limit' => 'integer',
+            'sort' => [
+                '{property}' => 'string'
+            ],
+            'language' => 'string',
+            'country' => 'string',
+            'device' => 'string',
+            'broker' => 'string',
+            'domain' => 'string',
+            'tenant' => 'string'
+        ];
     }
 }

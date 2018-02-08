@@ -23,4 +23,19 @@ final class Mutate implements Delete
     public function mutate(string $resourceClass,  array $args = [], array $context = []) {
         
     }
+    private function validate(array $args = [], array $context = []) {
+        
+    }
+        private function args(array $configs = []) {
+        return [
+            'select' => 'object',
+            'id' => 'string',
+            'language' => 'string',
+            'country' => 'string',
+            'device' => 'string',
+            'broker' => 'string',
+            'domain' => 'string',
+            'tenant' => 'string'
+        ];
+    }
 }

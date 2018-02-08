@@ -23,4 +23,7 @@ final class Mutate implements Update
     public function mutate(string $resourceClass,  array $args = [], array $context = []) {
         
     }
+    private function validate(array $args = [], array $context = []) {
+        
+    }
 }
