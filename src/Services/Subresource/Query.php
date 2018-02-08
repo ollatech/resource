@@ -1,13 +1,13 @@
 <?php
-namespace Olla\Resource;
+namespace Olla\Resource\Services\Subresource;
 
 use Olla\Prisma\MetadataInterface;
 use Olla\Flow\Repository;
 use Olla\Flow\Guard;
 use Olla\Flow\Validator;
-use Olla\Resource\Item;
+use Olla\Resource\Subresource;
 
-final class Query implements Item
+final class Query implements Subresource
 {
 	protected $metatada;
     protected $repository;
@@ -19,8 +19,7 @@ final class Query implements Item
         $this->guard = $guard;
         $this->validator = $validator;
     }
-    
-    public function get(string $resourceClass,  array $args = []) {
+    public function get(string $resourceClass,  array $args = [], array $context = []) {
         
     }
 }

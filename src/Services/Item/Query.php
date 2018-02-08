@@ -1,13 +1,13 @@
 <?php
-namespace Olla\Resource;
+namespace Olla\Resource\Services\Item;
 
 use Olla\Prisma\MetadataInterface;
 use Olla\Flow\Repository;
 use Olla\Flow\Guard;
 use Olla\Flow\Validator;
-use Olla\Resource\Delete;
+use Olla\Resource\Item;
 
-final class Mutate implements Delete
+final class Query implements Item
 {
 	protected $metatada;
     protected $repository;
@@ -20,7 +20,7 @@ final class Mutate implements Delete
         $this->validator = $validator;
     }
     
-    public function mutate(string $resourceClass,  array $args = []) {
+    public function get(string $resourceClass,  array $args = [], array $context = []) {
         
     }
 }

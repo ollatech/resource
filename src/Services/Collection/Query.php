@@ -1,13 +1,13 @@
 <?php
-namespace Olla\Resource;
+namespace Olla\Resource\Services\Collection;
 
 use Olla\Prisma\MetadataInterface;
 use Olla\Flow\Repository;
 use Olla\Flow\Guard;
 use Olla\Flow\Validator;
-use Olla\Resource\Search;
+use Olla\Resource\Collection;
 
-final class Query implements Search
+final class Query implements Collection
 {
 	protected $metatada;
     protected $repository;
@@ -20,7 +20,7 @@ final class Query implements Search
         $this->validator = $validator;
     }
     
-    public function get(string $resourceClass,  array $args = []) {
+    public function get(string $resourceClass,  array $args = [], array $context = []) {
         
     }
 }
