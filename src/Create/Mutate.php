@@ -20,7 +20,7 @@ final class Mutate implements Create
         $this->validator = $validator;
     }
     
-    public function create(string $resourceClass,  array $args = []) {
+    public function mutate(string $resourceClass,  array $args = []) {
         
     }
 }

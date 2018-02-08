@@ -20,7 +20,7 @@ final class Mutate implements Delete
         $this->validator = $validator;
     }
     
-    public function delete(string $resourceClass,  array $args = []) {
+    public function mutate(string $resourceClass,  array $args = []) {
         
     }
 }

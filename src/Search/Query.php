@@ -20,7 +20,7 @@ final class Query implements Search
         $this->validator = $validator;
     }
     
-    public function search(string $resourceClass,  array $args = []) {
+    public function get(string $resourceClass,  array $args = []) {
         
     }
 }

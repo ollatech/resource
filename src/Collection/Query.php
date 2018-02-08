@@ -20,7 +20,7 @@ final class Query implements Collection
         $this->validator = $validator;
     }
     
-    public function getCollection(string $resourceClass,  array $args = []) {
+    public function get(string $resourceClass,  array $args = []) {
         
     }
 }
