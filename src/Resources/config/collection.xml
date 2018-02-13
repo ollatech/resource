@@ -3,11 +3,11 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 	<services>
-		<service id="Olla\Resource\Services\Collection\Query" class="Olla\Resource\Services\Collection\Query" public="true">
+		<service id="olla.collection_resource" class="Olla\Resource\Services\Collection\Query" public="true">
 			<argument type="service" id="Olla\Prisma\Metadata" />
 			<argument type="service" id="olla.repository_component" />
 			<argument type="service" id="olla.guard_component" />
 			<argument type="service" id="olla.validator_component" />
-		</service>
+		</service> 
 	</services>
 </container>
